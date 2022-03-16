@@ -13,13 +13,13 @@ Formula: ![formula](railfence.png)
 Using the formula, we calculate y= `2` and x= `18`
 
 With that we get:
-
+```
 T     a           _     7     N     6     D     5     4 
  h   l g   : W   3 D   _ H   3 C   3 1   N _   _ 5   1 0
   e f     s   H R   0 5   3 F   3 8   N 4   3 D   2 8   
-         i     3     3     _     _     _     N     2    
+         i     3     3     _     _     _     N     2 
 
-
+```
 Flag: `picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_55228140}`
 
 
