@@ -1,0 +1,20 @@
+heT = The
+fl  =  fl
+g a = ag 
+s i = is 
+icp = pic
+CTo = oCT
+{7F = F{7
+4NR = R4N
+P05 = 5P0
+1N5 = 51N
+_16 = 6_1
+_35 = 5_3
+P3X = XP3
+51N = N51
+3_V = V3_
+CDE = ECD
+4CE = E4C
+4}7 = 74}
+
+picoCTF{7R4N5P051N6_15_3XP3N51V3_ECDE4C74}
