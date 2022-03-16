@@ -1,2 +1,5 @@
 #python bytecode cache
 __pycache__/
+
+#gdb cache
+.gdb_history
