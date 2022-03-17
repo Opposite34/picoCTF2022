@@ -1,0 +1,1 @@
+`run` is a binary file, executing the command: `chomod +x run` followed by `./run Hello!` returns `The flag is: The flag is: picoCTF{F1r57_4rgum3n7_981abfb5}`
