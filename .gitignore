@@ -3,3 +3,6 @@ __pycache__/
 
 #gdb cache
 .gdb_history
+
+#window-wsl zone identifier (in case it is forgotten)
+*.Identifier
