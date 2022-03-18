@@ -1,4 +1,4 @@
-### Current progress: not done
+### Current progress: Done
 
 A `capture.flag.pcap` packet capture file is given.
 
