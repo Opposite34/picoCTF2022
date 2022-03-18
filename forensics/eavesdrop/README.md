@@ -16,9 +16,11 @@ We can potentially decrypt this with: `openssl des3 -d -salt -in file.des3 -out 
 
 Stream 2 is actually this flag file mentioned above, seeing as it is being transferred via port `9002`.
 
-We extracted the stream 2 value to python using the "c array" format in wireshark. We placed this into [enc_arr.py](enc_arr.py)
+We were trying to extracted the stream 2 value to python using the "c array" format in wireshark.
+However, it seems to show a `bad decrypt` error.
 
-However, it seems to show a `bad decrypt` error when running the command...
+So we went for a different approach by using `tcpflow -r capture.flag.pcap` to help us extract the file instead.
+After this, we are able to go through the files extracted and find the des3 encrypted file. 
+We renamed it to `file.des3` and run the openssl decrypt command.
 
-### TODO
-- Clean out the value for `file.des3` from the .pcap
+After this, we got our flag: `picoCTF{nc_73115_411_77b05957}`
