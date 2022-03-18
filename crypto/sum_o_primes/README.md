@@ -2,7 +2,7 @@
 
 A `gen.py` and its `output.txt` is given.
 
-After searching `sum of primes rsa` on Google, we are met with an interesting interactions on [stackexchange](https://crypto.stackexchange.com/questions/87308/relation-between-factors-and-their-sum-on-rsa).
+After searching `sum of primes rsa` on Google, we are met with an interesting interactions on [Stack Exchange](https://crypto.stackexchange.com/questions/87308/relation-between-factors-and-their-sum-on-rsa).
 
 It seems like this can be solved in two ways:
 - Solving the quadratic equation `(x-p)(x-q)` since you know both `pq` and `p+q`, this should not be too hard to compute
