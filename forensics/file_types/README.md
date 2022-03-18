@@ -44,7 +44,7 @@ flag
 2 blocks
 ```
 
-- It seems like `cpio` is trying to create a file called `flag`, but it doesn't want to overwrite our current `flag` file. So let's rename the current `flag` to `flag.cpio` and run the command again.
+It seems like `cpio` is trying to create a file called `flag`, but it doesn't want to overwrite our current `flag` file. So let's rename the current `flag` to `flag.cpio` and run the command again.
 
 - The `flag` file given from `flag.cpio` seems to be a `bzip2 compressed data` according to our friend `file` command. To avoid problems with file names again, we rename this file to `flag.bz2` and run `bunzip2 -d flag.bz2`.
 
