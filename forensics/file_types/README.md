@@ -23,20 +23,16 @@ x - extracting flag (text)
 x - removed lock directory _sh00047
 ``` 
 
+### Many compressions, many pain
+
 We also get a flag file from this. In which, like the challenge suggest, probably needs to find the filetype.
 Instead of running `file` command on it, my first thought seems to be to drag this file https://hexed.it/.
 
 The result shows `21 3C 61 72 63 68 3E 0A` - which is the magic number for `ar archiver` in unix.
 
-Running `man ar` shows that we have to use `ar x flag` to extract the file:
-`ar: flag: file format not recognized` - we, however, got this instead.
+Running `man ar` shows that we have to use `ar x flag` to extract the file, so we did that.
 
-
-### Many compressions, many pain
-
-We did not touch this challenge for a while, but once we came back. We decided to remove the `flag` file and rerun the `Flag.pdf`.
-
-Somehow, the magic numbers above seemed to be gone, and running `file` command on it instead of just showing `archive` it shows:
+After that, running the `file` command on it again shows:
 `cpio archive`.
 
 So we extracted the `flag` file with `cpio -iv < flag`
