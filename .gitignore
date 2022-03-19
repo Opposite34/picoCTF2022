@@ -6,3 +6,5 @@ __pycache__/
 
 #window-wsl zone identifier (in case it is forgotten)
 *.Identifier
+
+disk.flag.img
