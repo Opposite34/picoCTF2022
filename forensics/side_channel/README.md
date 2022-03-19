@@ -12,7 +12,7 @@ Basically, when cracking a password, one can check the time-taken for the output
 - If we get a character correct, that means that it proceeds to work on the next character.
 - We can infer that the above point is happening due to the time difference that we got from the binary.
 
-We implemented a timing function in python. Using `subprocess` to run shell commands and `timeit` to time our process.
+We implemented a timing function in [cracker.py](cracker.py). Using `subprocess` to run shell commands and `timeit` to time our process.
 From this, we got the PIN of `48390513`. Checking the PIN with the local `pin_checker` shows that this is the correct PIN.
 
 netcatting to the server and input our PIN gives us the following:
