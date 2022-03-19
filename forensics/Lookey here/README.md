@@ -1,0 +1,1 @@
+A simple search in the `.txt` file returns `picoCTF{gr3p_15_@w3s0m3_429334b2}`
