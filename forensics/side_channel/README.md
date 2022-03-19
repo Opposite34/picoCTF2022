@@ -1,4 +1,4 @@
-### Current progress: not done
+### Current progress: Done
 
 A `pin_checker` binary was given. When ran, it asked for 8-digit PIN.
 
