@@ -7,4 +7,6 @@ __pycache__/
 #window-wsl zone identifier (in case it is forgotten)
 *.Identifier
 
+#disk files from forensics challenges
 disk.flag.img
+disk.img
