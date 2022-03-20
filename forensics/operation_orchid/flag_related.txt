@@ -1,0 +1,12 @@
+218985524 flag.txt
+218985540 flag.txt.enc
+219964416 touch flag.txt
+219964431 nano flag.txt 
+219964483 nano flag.txt 
+219964506 openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
+219964588 shred -u flag.txt
+303193140 flag.txt
+303317044 flag.txt
+303317060 flag.txt.enc
+303328308 flag.txt
+303328324 flag.txt.enc
