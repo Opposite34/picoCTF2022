@@ -31,8 +31,8 @@ From the offset of things we found above, we can determined (by dividing the sec
 The flag was likely stored in the `411648` offset partition.
 
 So, we ran a recursive [fls](http://www.sleuthkit.org/sleuthkit/man/fls.html) with above offset and grep for the flag:
-`fls -o 411648 -r disk.flag.img | grep flag`
-Which outputs the following:
+   `fls -o 411648 -r disk.flag.img | grep flag`
+   Which outputs the following:
 ```
 + r/r * 1876(realloc):  flag.txt
 + r/r 1782:     flag.txt.enc
@@ -40,9 +40,9 @@ Which outputs the following:
 
 There lies the `flag.txt.enc`. 
 So, we used the [icat](https://www.sleuthkit.org/sleuthkit/man/icat.html) command and output it to `flag.txt.enc`:
-`icat -o 411648 disk.flag.img 1782 > flag.txt.enc`
+   `icat -o 411648 disk.flag.img 1782 > flag.txt.enc`
 
 Next, we decrypt the `flag.txt.enc` with the password we found from `flag_related.txt` and output it to `flag.txt`
-`openssl aes256 -d -k unbreakablepassword1234567 -in flag.txt.enc -out flag.txt`
+   `openssl aes256 -d -k unbreakablepassword1234567 -in flag.txt.enc -out flag.txt`
 
 This gives us the flag: `picoCTF{h4un71ng_p457_17237fce}`
