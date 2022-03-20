@@ -21,7 +21,7 @@ Then, the value above is passed into `FUN_00101209` function.
 This function seems to handle our input and returns `\0` if it's an "invalid key"
 
 In the `FUN_00101209` we found these values:
-```
+```c
 local_98 = 0x7b4654436f636970;
 local_90 = 0x30795f676e317262;
 local_88 = 0x6b5f6e77305f7275;

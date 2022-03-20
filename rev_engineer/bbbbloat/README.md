@@ -7,7 +7,7 @@ Running this prompts `What's my favorite number?` in which we can assume that we
 After opening this in ghidra, we went to the `entry` function, which calls `FUN_00101307`
 Here's a part of the function:
 
-```
+```c
 undefined8 FUN_00101307(void)
 {
   ...

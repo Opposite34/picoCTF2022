@@ -21,7 +21,7 @@ Then, we opened `unpackme` with ghidra, and now we found the main function:
 Seems like our input is read with `scanf` and stored into `local_44` variable.
 This variable is then compared with the hexadecimal `0xb83cb`
 
-```
+```c
 if (local_44 == 0xb83cb) {
     local_40 = (char *)rotate_encrypt(0,&local_38);
     fputs(local_40,(FILE *)stdout);

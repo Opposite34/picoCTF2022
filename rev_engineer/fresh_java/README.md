@@ -1,6 +1,6 @@
 Using a Java decomplier, we can observe that this part of the code:
 
-```
+```java
     if (str.charAt(33) != '}') {
       System.out.println("Invalid key");
       return;

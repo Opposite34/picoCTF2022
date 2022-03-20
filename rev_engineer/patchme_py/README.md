@@ -2,7 +2,7 @@
 
 This challenge gives a python code, with an xor function and a `level_1_pw_check` function:
 
-```
+```py
 def level_1_pw_check():
     user_pw = input("Please enter correct password for flag: ")
     if( user_pw == "ak98" + \

@@ -1,5 +1,5 @@
 We modified the program as follows:
-```
+```py
 import base64
 from cryptography.fernet import Fernet
 
@@ -14,7 +14,7 @@ exec(plain.decode())  ----> print(plain.decode())
 
 By doing this, instead of executing `plain` it will print it out which give:
 
-```
+```py
 pw = input('What\'s the password? ')
 
 if pw == 'batteryhorse':
