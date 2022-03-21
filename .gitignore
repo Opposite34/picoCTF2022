@@ -10,3 +10,6 @@ __pycache__/
 #disk files from forensics challenges
 disk.flag.img
 disk.img
+
+#challenge's private key file
+id_ed25519
