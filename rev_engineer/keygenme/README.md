@@ -1,4 +1,4 @@
-### Current progress: not done
+### Current progress: Done
 
 A `keygenme` binary is given. This binary is an amd64 little endian executable.
 The binary asks for a license key. In which we assume that we need to find the key within the binary.
