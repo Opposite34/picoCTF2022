@@ -7,23 +7,22 @@ e = 0x10001
 #pollard's p-1 algorithm
 def pollard(n):
     a = 2
-    i = 1
+    i = 2
     p = 1
 
-    while(p == 1):
-        a = pow(a, i)
+    while(i < n and p == 1):
+        a = pow(a, i, n)
         p = math.gcd(a - 1, n)
         i += 1
     
-    if(p == n):
-        raise(Exception("Can't find factor"))
+    if(1 < p < n):
+        #we need floor division so the large numbers work
+        q = n//p
 
-    q = int(n/p)
+        return p, int(q)
+    else:
+        raise(Exception("Can't find factor"))
     
-    if(n != p*q):
-        print("Warning: multiplication check failed")
-    
-    return p,q
 
 
 #rsa decryption function
@@ -43,8 +42,12 @@ print(pollard(2993))
 
 p,q = pollard(n)
 
-print(f"p: {p}")
-print(f"q: {q}")
+# print(f"n: {n}")
+# print(f"p: {p}")
+# print(f"q: {q}")
+
+pt = decrypt_rsa(p, q, n, c, e)
+print(pt)
 
 with open("flag.txt", 'w') as f:
-    f.write(decrypt_rsa(p, q, n, c, e))
+    f.write(pt)
