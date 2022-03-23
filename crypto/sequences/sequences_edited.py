@@ -58,5 +58,4 @@ if __name__ == "__main__":
     # print(m_func_one(x) == m_func_og(x))
 
     # sol = m_func(ITERS)
-    sol = m_func_one(ITERS)
-    decrypt_flag(sol)
+    # decrypt_flag(sol)
