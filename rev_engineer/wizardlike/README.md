@@ -26,7 +26,9 @@ The aboves are for the function `up`. We also do this same thing for the other m
 After that, we hit `o` to export the file to an `ELF` so that we could run it.
 
 Once we are able to go out of bounds, we fly around each level and screenshot them into
-`flag_#.jpg` (where # is the level number).
+`flag_level/flag_#.jpg` (where # is the level number).
 
+Here's the full flag in the game's ASCII art:
+![full flag](full_flag.png)
 
-We are then able to construct the flag from those ASCII art to be: `picoCTF{ur_4_w1z4rd_2A05D7A8}`
+In which we can read it as: `picoCTF{ur_4_w1z4rd_2A05D7A8}`
